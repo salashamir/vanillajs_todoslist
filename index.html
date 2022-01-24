@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Todos</title>
+  </head>
+  <body>
+    <!-- container -->
+    <div class="container">
+      <!-- header -->
+      <header class="header">
+        <h1 class="primary">Todo List</h1>
+        <div class="alert alert-red none">Todo deleted &times;</div>
+        <div class="alert alert-green none">Todo added &radic;</div>
+        <form class="search">
+          <input
+            autocomplete="off"
+            type="text"
+            placeholder="Search todos"
+            name="search"
+            id="search"
+            class="form-control"
+          />
+          <label for="search" class="form-label">Search todos</label>
+        </form>
+      </header>
+      <!-- list  -->
+      <ul class="list todos">
+        <li class="list-item">
+          <div>
+            <p class="p">Play Breath of the Wild 🕹</p>
+          </div>
+          <div>
+            <i class="fas fa-check check"></i>
+            <i class="far fa-edit edit"></i>
+            <i class="far fa-trash-alt delete"></i>
+          </div>
+        </li>
+        <li class="list-item">
+          <div>
+            <p class="p">Win a tennis championship 🥇</p>
+          </div>
+          <div>
+            <i class="fas fa-check check"></i>
+            <i class="far fa-edit edit"></i>
+            <i class="far fa-trash-alt delete"></i>
+          </div>
+        </li>
+        <li class="list-item">
+          <div>
+            <p class="p">Make a cake 🍰</p>
+          </div>
+          <div>
+            <i class="fas fa-check check"></i>
+            <i class="far fa-edit edit"></i>
+            <i class="far fa-trash-alt delete"></i>
+          </div>
+        </li>
+      </ul>
+
+      <!-- add form -->
+      <form class="add">
+        <div>
+          <input
+            id="add"
+            type="text"
+            name="add"
+            autocomplete="off"
+            placeholder="Add a new todo..."
+          />
+          <label for="add" class="add">Add a new todo...</label>
+        </div>
+        <button class="btn" type="submit">Add</button>
+        <button class="btn btn-clear" type="button">Clear</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
